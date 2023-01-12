@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANTENNA-LENGTH-CALCULATOR</title>
+        <link rel="stylesheet" href="Title.css">
+        <link rel="stylesheet" href="Popup.css">
+    </head>
+    <body>
+        <!--TITLEBAR SCRIPT STARTS-->
+        <div class="Title">
+            <h1>ANTENNA LENGTH CALCULATOR</h1>
+                  <div class="Title-Subtitle"></div>
+          </div>
+          <!--TITLEBAR SCRIPT ENDS-->
+
+          <div id="demo-modal" class="modal" role="dialog" tabindex="-1">
+            <div class="model-inner">
+              <div class="modal-header">
+                <h2>ANTENNA PARAMETERS</h2>
+                <button class="modal-close" data-id="demo-modal" aria-label="Close">
+                  &times;
+                </button>
+              </div><br>
+              <label>Frequency</label>
+              <input type='text' placeholder='ENTER FREQUENCY' id='INPUT_FREQUENCY'/>
+              <select id="INPUT_FREQUENCY_TYPE" onchange="frequencyresult()">
+              <option value="hertz">hertz (Hz)</option>
+              <option value="kilohertz">kilohertz (kHz)</option>
+              <option value="megahertz">megahertz (MHz)</option>
+              <option value="gigahertz">gigahertz (GHz)</option>
+              <option value="terahertz">terahertz (THz)</option>
+              <option value="revolutionsperminute">revolutions per minute (RPM)</option>
+              </select><br>
+              <h3>RESULT</h3>
+              <label>Antenna Length(L)</label>
+              <input type='text' placeholder='ENTER ANTENNA LENGTH (L)' id='INPUT_ANTENNA_LENGTH'/>
+              <select id="INPUT_ANTENNA_LENGTH_TYPE" onchange="AntennaLengthResult()">
+              <option value="meters">meters (m)</option>
+              <option value="millimeters">millimeters (mm)</option>
+              <option value="centimeters">centimeters (cm)</option>
+              <option value="inches">inches (in)</option>
+              <option value="feet">feet (ft)</option>
+              <option value="feetbyinches">feet/inches</option>
+              <option value="metersbycentimeters">meters/centimeters</option>
+              </select><br>
+              <label>Dipole leg Length(l)</label>
+              <input type='text' placeholder='ENTER DIPOLE LEG LENGTH (l)' id='INPUT_DIPOLE_LEG_LENGTH'/>
+              <select id="INPUT_DIPOLE_LEG_LENGTH_TYPE" onchange="DipoleLegLengthResult()">
+              <option value="meters">meters (m)</option>
+              <option value="centimeters">centimeters (mm)</option>
+              <option value="millimeters">millimeters (cm)</option>
+              <option value="kilometers">kilometers (km)</option>
+              <option value="inches">inches (in)</option>
+              <option value="feet">feet (ft)</option>
+              <option value="yards">yards (yd)</option>
+              <option value="miles">miles (mi)</option>
+              <option value="nauticalmiles">nautical miles (nmi)</option>
+              <option value="feetbyinches">feet/inches</option>
+              <option value="metersbycentimeters">meters/centimeters</option>
+              </select><br>
+              <label>Wavelength</label>
+              <input type='text' placeholder='ENTER WAVELENGTH' id='INPUT_WAVELENGTH'/>
+              <select id="INPUT_WAVELENGTH_TYPE" onchange="WavelengthResult()">
+              <option value="meters">meters (m)</option>
+              <option value="millimeters">millimeters (mm)</option>
+              <option value="centimeters">centimeters (cm)</option>
+              <option value="kilometers">kilometers (km)</option>
+              <option value="inches">inches (in)</option>
+              <option value="feet">feet (ft)</option>
+              <option value="yards">yards (yd)</option>
+              <option value="miles">miles (mi)</option>
+              <option value="feetbyinches">feet/inches</option>
+              <option value="metersbycentimeters">meters/centimeters</option>
+              </select><br>
+              <label>1/2 Wavelength</label>
+              <input type='text' placeholder='ENTER HALF WAVELENGTH' id='INPUT_HALF_WAVELENGTH'/>
+              <select id="INPUT_HALF_WAVELENGTH_TYPE" onchange="HalfWavelengthResult()">
+              <option value="meters">meters (m)</option>
+              <option value="millimeters">millimeters (mm)</option>
+              <option value="centimeters">centimeters (cm)</option>
+              <option value="kilometers">kilometers (km)</option>
+              <option value="inches">inches (in)</option>
+              <option value="feet">feet (ft)</option>
+              <option value="yards">yards (yd)</option>
+              <option value="miles">miles (mi)</option>
+              <option value="feetbyinches">feet/inches</option>
+              <option value="metersbycentimeters">meters/centimeters</option>
+              </select><br>
+              <label>1/4 Wavelength</label>
+              <input type='text' placeholder='ENTER QUATER WAVELENGTH' id='INPUT_QUATER_WAVELENGTH'/>
+              <select id="INPUT_QUATER_WAVELENGTH_TYPE" onchange="QuaterWavelengthResult()">
+              <option value="meters">meters (m)</option>
+              <option value="millimeters">millimeters (mm)</option>
+              <option value="centimeters">centimeters (cm)</option>
+              <option value="kilometers">kilometers (km)</option>
+              <option value="inches">inches (in)</option>
+              <option value="feet">feet (ft)</option>
+              <option value="yards">yards (yd)</option>
+              <option value="miles">miles (mi)</option>
+              <option value="feetbyinches">feet/inches</option>
+              <option value="metersbycentimeters">meters/centimeters</option>
+              </select>
+              <script src="CALCULATION.js"></script>
+            </div>
+          </div>
+          <button class="modal-open" data-id="demo-modal" >DISPLAY CALCULATOR</button>
+          <script src="popup.js"></script>
+    </body>
+</html>

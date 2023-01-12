@@ -1,0 +1,15 @@
+/*  src/Title.css  */
+.Title {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius:0px 0px 30px 30px;;
+    align-items: baseline;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: rgb(4, 245, 233);
+    color: #fff;
+  }
+
+  /*POPUP CSS CODE*/
